@@ -1,0 +1,23 @@
+.amountWrapper{
+  max-width: 240px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.amountTitle{
+  color: #9fa9ba;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.amountCount{
+  color: #ffb027;
+  font-family: "Montserrat Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}

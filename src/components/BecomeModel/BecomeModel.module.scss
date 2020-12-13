@@ -1,0 +1,33 @@
+@import "./src/common/vаriables.module";
+
+.become {
+  background-color: $secondBgColor;
+  background-image: url("../../assets/img/secondBg1x2layer.jpg");
+  background-repeat: no-repeat;
+  background-size: 600px 992px;
+  background-position: 30% bottom;
+}
+
+.becomeBg {
+  padding: 120px 0 106px 0;
+  background-image: url("../../assets/img/secondBg1x.png");
+  background-repeat: no-repeat;
+  background-size: 474px 992px;
+  background-position: 20% bottom;
+}
+
+.instructionWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  &:after{
+    position: absolute;
+    bottom: 0;
+    right: 450px;
+    content: "18+";
+    color: #e4eaf0;
+    font-size: 148px;
+    font-weight: 700;
+  }
+}

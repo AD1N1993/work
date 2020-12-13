@@ -1,0 +1,27 @@
+@import "./src/common/vаriables.module";
+.btn{
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 4px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color:$mainBtnBg;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  &:hover{
+    background-color: #ffa600;
+  }
+  &:active{
+    background-color: #c38000;
+    position: relative;
+    top: -1px;
+  }
+}

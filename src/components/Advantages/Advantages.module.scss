@@ -1,0 +1,13 @@
+@import "./src/common/vаriables.module";
+.advantages{
+  background-color: $secondBgColor;
+  padding: 120px 0 86px 0;
+  text-align: center;
+}
+
+.advantagesWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

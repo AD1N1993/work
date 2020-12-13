@@ -1,0 +1,26 @@
+.inputLabel{
+  color: #9fa9ba;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.43px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.formInput{
+  display: block;
+  margin-top: 5px;
+  max-width: 382px;
+  border-radius: 4px;
+  border: 1px solid #e4eaf0;
+  border-color: rgba(#000, 0.1);
+  width: 100%;
+  background-color: #0D0D0D;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 12px 0 12px 12px;
+
+  box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+@font-face {
+
+  font-family: "Montserrat";
+  src: url("/my-app/src/assets/fonts/Montserrat-Medium.ttf") format("ttf"),
+  url("/my-app/src/assets/fonts/Montserrat-SemiBold.ttf") format("ttf"),
+  url("/my-app/src/assets/fonts/Montserrat-Thin.ttf") format("ttf");
+
+}
+
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+}
+

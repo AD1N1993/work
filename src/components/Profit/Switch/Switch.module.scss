@@ -1,0 +1,38 @@
+.inputLabel{
+  color: #9fa9ba;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.43px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.btn{
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 15px 85px;
+  box-sizing: border-box;
+  width: 192px;
+  opacity: 0.3;
+  color: #ffffff;
+  background-color: rgba(242, 244, 247, 0.05);
+  border: 1px solid #e4eaf0;
+  cursor: pointer;
+}
+
+.btnBlue{
+  border: 1px solid rgba(25, 169, 255, 0.49);
+  color: #19a9ff;
+  opacity: 1;
+}
+.btnBradiusLeft{
+  border-radius: 4px 0 0 4px;
+}
+.btnBradiusRight{
+  border-radius: 0 4px 4px 0;
+}

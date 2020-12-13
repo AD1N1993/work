@@ -1,0 +1,46 @@
+@import "./src/common/vаriables.module";
+
+.profit{
+  position: relative;
+  background-color: $firstBgColor;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 120px 0 74px 0;
+  background-image: url("../../assets/img/profit.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  &:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.55;
+    z-index: -1;
+
+  }
+
+}
+.profitForm{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  text-align: left;
+  margin: -32px 0 63px 0;
+}
+
+.profitFormBox{
+  flex-basis: 384px;
+  margin-bottom: 31px;
+}
+.profitAmount{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 185px 63px 185px;
+}

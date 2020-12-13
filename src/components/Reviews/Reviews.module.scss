@@ -1,0 +1,18 @@
+@import "./src/common/vаriables.module";
+
+.reviews {
+  padding: 120px 0 101px 0;
+  background: #ffffff;
+}
+
+.reviewsTitleContainer {
+  max-width: 748px;
+  margin: 0 auto;
+}
+
+.cardsReviews {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+}

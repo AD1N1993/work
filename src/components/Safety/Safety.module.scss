@@ -1,0 +1,49 @@
+@import "./src/common/vаriables.module";
+
+.safety {
+  padding: 120px 0 122px 0;
+}
+
+.safetyWrapper {
+  display: flex;
+  justify-content: space-between;
+  .box{
+    position: absolute;
+    top: 140px;
+    left:-50px;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    border-radius: 4px;
+    background-color: #f2f4f7;
+    opacity: 0.6;
+  }
+}
+
+.safetyImg {
+  position: relative;
+  width: 588px;
+  height: 580px;
+  &:before, &:after {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 200px;
+    border-radius: 4px;
+    background-color: #f2f4f7;
+    opacity: 0.6;
+  }
+  &:before{
+    top: -50px;
+    right: -50px;
+  }
+  &:after {
+    bottom: -30px;
+    right: 45px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

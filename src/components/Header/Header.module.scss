@@ -1,0 +1,168 @@
+@import "../../common/vаriables.module";
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $firstBgColor;
+  color: #ffffff;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 0;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logoWrapper {
+  width: 87px;
+  height: 16px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navListItem {
+  margin: 0 13px;
+}
+
+.navListLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.85;
+
+  &:hover {
+    color: #ffb027;
+  }
+}
+
+.btnGroup {
+  display: flex;
+  align-items: center;
+}
+
+.logOut {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  line-height: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .navListItem {
+    margin: 0 7px;
+    &:nth-child(4), &:nth-child(5){
+      display: none;
+    }
+  }
+  .navListLink {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .headerWrapper{
+    justify-content: space-around;
+  }
+  .nav{
+    //display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    min-height: 100vh;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+  .openNav{
+    transform: translateX(0);
+  }
+  .navList{
+    background-color: black;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: 0.7;
+    height: 100%;
+  }
+  .navListItem {
+    margin: 0 7px 10px 7px;
+
+    &:nth-child(4), &:nth-child(5){
+      display: block;
+    }
+  }
+  .navListLink {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1;
+  }
+
+
+  .menu{
+
+    &:hover{
+      cursor:pointer;
+    }
+  }
+  .hambergerIcon{
+    height: 2px;
+    width:40px;
+
+    border-radius: 50px;
+    background-color: #ffffff;
+    transform: translate(-50%,-50%) rotate(0deg);
+    transition: all ease 0.5s;
+    &::before,&::after{
+      content:"";
+      position: absolute;
+      height: inherit;
+      border-radius: inherit;
+      background-color: inherit;
+      margin: auto;
+      width: 50%;
+      transition: all ease 0.5s;
+    }
+    &::before{
+      top: -10px;
+      left: 0;
+      transform-origin: left;
+    }
+    &::after{
+      bottom:-10px;
+      right: 0;
+      transform-origin: right;
+    }
+  }
+
+  .open{
+    position: fixed;
+    top: 100px;
+    left: 35%;
+    transform:translate(-50%,-50%) rotate(135deg);
+    &::before{
+      top:0;
+      transform: translateX(100%) rotate(-90deg);
+    }
+    &::after{
+      bottom:0;
+      transform: translateX(-100%) rotate(-90deg);
+    }
+  }
+}

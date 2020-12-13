@@ -1,0 +1,46 @@
+.reviewWrapper {
+  max-width: 384px;
+
+}
+
+.reviewImgWrapper {
+  position: relative;
+  width: 382px;
+  height: 240px;
+  margin-bottom: 32px;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.reviewName {
+  position: relative;
+  color: #252529;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  &:before{
+    position: absolute;
+    top: -23px;
+    left: -23px;
+    content: "";
+    width: 48px;
+    height: 40px;
+    background: url("../../../assets/img/quote.svg")  50% 50% no-repeat;
+    z-index: -1;
+  }
+}
+
+.review {
+  color: #252529;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  margin: 0;
+}
