@@ -5,7 +5,7 @@
   background-image: url("../../assets/img/secondBg1x2layer.jpg");
   background-repeat: no-repeat;
   background-size: 600px 992px;
-  background-position: 30% bottom;
+  background-position: 20% bottom;
 }
 
 .becomeBg {
@@ -30,4 +30,11 @@
     font-size: 148px;
     font-weight: 700;
   }
+}
+
+@media (max-width: 768px) {
+  .instructionWrapper {
+    align-items: center;
+  }
+
 }

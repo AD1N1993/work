@@ -6,10 +6,10 @@
   background-image: url("../../assets/img/promoBg1x.png"), url("../../assets/img/promoBg1x2layer.jpg");
   background-repeat: no-repeat;
   background-size: 800px 800px;
-  background-position: 82% 0%;
+  background-position: 82% 0;
 }
 
-.promoText{
+.promoText {
   color: #ffffff;
   font-family: "Montserrat Thin", sans-serif;
   font-size: 48px;
@@ -18,20 +18,61 @@
   text-align: left;
   text-transform: uppercase;
 }
-.supTitle{
+
+.supTitle {
   display: inline-block;
   margin-bottom: 40px;
 }
 
-.promoTitle{
+.promoTitle {
   font-size: 90px;
   letter-spacing: 9px;
   margin: 0 0 48px 0;
 }
-.subTitle{
+
+.subTitle {
   font-family: "Montserrat Medium", sans-serif;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 5px;
   margin: 0 0 80px 0;
 }
+
+@media (max-width: 1550px) {
+  .promo {
+    background-position: 94% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+    background-position: center center;
+    padding: 50px 0;
+    background-size: contain;
+  }
+  .promoText {
+    text-align: center;
+  }
+  .supTitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo {
+    padding: 0 0 20px 0;
+  }
+  .supTitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .promoTitle {
+    font-size: 45px;
+    margin-bottom: 80px;
+  }
+  .subTitle {
+    position: relative;
+    top: 45px;
+  }
+}
+

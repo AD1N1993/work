@@ -7,7 +7,11 @@
   color: #ffffff;
   width: 100%;
   z-index: 999;
-  padding: 20px 0;
+  padding: 10px 0;
+}
+
+.burgerMenu {
+  display: none;
 }
 
 .headerWrapper {
@@ -63,10 +67,11 @@
   cursor: pointer;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1125px) {
   .navListItem {
     margin: 0 7px;
-    &:nth-child(4), &:nth-child(5){
+
+    &:nth-child(4), &:nth-child(5) {
       display: none;
     }
   }
@@ -77,34 +82,34 @@
 }
 
 @media (max-width: 768px) {
-  .headerWrapper{
-    justify-content: space-around;
+  .headerWrapper {
+    justify-content: space-between;
   }
-  .nav{
-    //display: none;
+  .nav {
     position: fixed;
-    top: 0;
+    top: -14px;
     left: 0;
-    width: 30%;
+    width: 100%;
     min-height: 100vh;
     height: 100%;
     transform: translateX(-100%);
+    transition: all ease 0.5s;
   }
-  .openNav{
+  .openNav {
     transform: translateX(0);
   }
-  .navList{
+  .navList {
     background-color: black;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    opacity: 0.7;
+    opacity: 0.9;
     height: 100%;
   }
   .navListItem {
-    margin: 0 7px 10px 7px;
+    margin: 0 7px 20px 7px;
 
-    &:nth-child(4), &:nth-child(5){
+    &:nth-child(4), &:nth-child(5) {
       display: block;
     }
   }
@@ -115,22 +120,31 @@
   }
 
 
-  .menu{
+  .burgerMenu {
+    position: relative;
+    z-index: 999;
+    display: block;
+    padding-left: 20px;
 
-    &:hover{
-      cursor:pointer;
+    &:hover {
+      cursor: pointer;
     }
   }
-  .hambergerIcon{
+  .btnClose{
+    top: 20px;
+    right: -95%;
+  }
+  .hambergerIcon {
     height: 2px;
-    width:40px;
+    width: 30px;
 
     border-radius: 50px;
     background-color: #ffffff;
-    transform: translate(-50%,-50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
     transition: all ease 0.5s;
-    &::before,&::after{
-      content:"";
+
+    &::before, &::after {
+      content: "";
       position: absolute;
       height: inherit;
       border-radius: inherit;
@@ -139,29 +153,30 @@
       width: 50%;
       transition: all ease 0.5s;
     }
-    &::before{
-      top: -10px;
+
+    &::before {
+      top: -6px;
       left: 0;
       transform-origin: left;
     }
-    &::after{
-      bottom:-10px;
+
+    &::after {
+      bottom: -6px;
       right: 0;
       transform-origin: right;
     }
   }
 
-  .open{
-    position: fixed;
-    top: 100px;
-    left: 35%;
-    transform:translate(-50%,-50%) rotate(135deg);
-    &::before{
-      top:0;
+  .open {
+    transform: translate(-50%, -50%) rotate(135deg);
+
+    &::before {
+      top: 0;
       transform: translateX(100%) rotate(-90deg);
     }
-    &::after{
-      bottom:0;
+
+    &::after {
+      bottom: 0;
       transform: translateX(-100%) rotate(-90deg);
     }
   }

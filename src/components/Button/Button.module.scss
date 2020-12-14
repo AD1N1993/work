@@ -1,5 +1,6 @@
 @import "./src/common/vаriables.module";
-.btn{
+
+.btn {
   color: #ffffff;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
@@ -10,18 +11,33 @@
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color:$mainBtnBg;
+  background-color: $mainBtnBg;
   outline: none;
   border: none;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  &:hover{
+
+  &:hover {
     background-color: #ffa600;
   }
-  &:active{
+
+  &:active {
     background-color: #c38000;
     position: relative;
     top: -1px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 8px 16px!important;
+  }
+}
+
+@media (max-width: 386px) {
+  .btn {
+    padding: 5px 12px!important;
+    line-height: 1.25;
   }
 }

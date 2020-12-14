@@ -16,12 +16,12 @@ function App() {
         <Header/>
         <Promo/>
         <BecomeModel/>
-        <Profit/>
-        <Advantages/>
-        <Safety/>
-        <Join/>
-        <Reviews/>
-        <Awards/>
+        {/*<Profit/>*/}
+        {/*<Advantages/>*/}
+        {/*<Safety/>*/}
+        {/*<Join/>*/}
+        {/*<Reviews/>*/}
+        {/*<Awards/>*/}
     </div>
   );
 }

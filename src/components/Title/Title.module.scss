@@ -17,3 +17,15 @@
 .titleBlack {
   color: #252529;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
+}
