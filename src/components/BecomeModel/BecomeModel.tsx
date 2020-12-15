@@ -27,6 +27,7 @@ export const BecomeModel = () => {
     return (
         <section className={s.become}>
             <div className={cs.container}>
+
                 <div className={s.becomeBg}>
                     <Title value={"Стать моделью легко"} mode={"black"}/>
                     <div className={s.instructionWrapper}>

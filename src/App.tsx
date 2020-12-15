@@ -16,7 +16,7 @@ function App() {
         <Header/>
         <Promo/>
         <BecomeModel/>
-        {/*<Profit/>*/}
+        <Profit/>
         {/*<Advantages/>*/}
         {/*<Safety/>*/}
         {/*<Join/>*/}

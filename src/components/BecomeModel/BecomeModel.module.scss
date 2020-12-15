@@ -35,6 +35,14 @@
 @media (max-width: 768px) {
   .instructionWrapper {
     align-items: center;
+    &:after{
+      font-size: 80px;
+      right: 50px;
+      bottom: 45px;
+    }
+  }
+  .becomeBg {
+    padding: 60px 0 53px 0;
   }
 
 }

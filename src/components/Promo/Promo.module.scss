@@ -48,13 +48,20 @@
   .promo {
     background-position: center center;
     padding: 50px 0;
-    background-size: contain;
+    background-size: cover;
+    min-height: 100vh;
   }
   .promoText {
     text-align: center;
   }
   .supTitle {
     font-size: 32px;
+  }
+  .promoTitle {
+    margin-bottom: 350px;
+  }
+  .subTitle{
+    margin: 0 0 22px 0;
   }
 }
 
@@ -68,11 +75,10 @@
   }
   .promoTitle {
     font-size: 45px;
-    margin-bottom: 80px;
+    margin-bottom: 400px;
   }
-  .subTitle {
-    position: relative;
-    top: 45px;
+  .subTitle{
+    margin: 0 0 22px 0;
   }
 }
 
